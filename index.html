@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakers Den</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./script.js" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" href="" sizes="48x48" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-content">
+          <div class="logo">
+            <img
+              src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotJNm9y_pIfWTnzfSFEYWX3q-JZ4shugCRqNQOrQpy9PmmzJFYdBoKur6e4tNuxaJ9Hw&usqp=CAU"
+              alt="Logo"
+            />
+            <span class="shop-name notranslate">Bakers Den</span>
+          </div>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#home" id="nav-item-home">Home</a></li>
+            <li><a href="#about" id="nav-item-about">About Us</a></li>
+       
+         <li><a href="#products" id="nav-item-pricing">Products</a></li>
+            <li><a href="#pricing" id="nav-item-pricing">Pricing</a></li>
+            <li><a href="#gallery" id="nav-item-gallery">Gallery</a></li>
+            <li><a href="#payments" id="nav-item-payment">Payments</a></li>
+            <li><a href="#contact" id="nav-item-contact">Contact Us</a></li>
+            <li>
+              <a href="#book" id="nav-item-appointment" onclick="openPopup()"
+                >Book Now</a
+              >
+            </li>
+          <li>
+            <!-- <li id="nav-item-profile-desktop" class="desktop-only">
+              <a rel="noopener" href="" target="_blank">
+                <i class="bi bi-person-fill"></i>Login
+              </a>
+            </li> -->
+        
+             <!-- Custom Language Selector -->
+             <li class="nav-item">
+              <div class="translate-container notranslate">
+                  <button class="translate-btn" id="selected-lang" onclick="toggleDropdown()">
+                      English
+                  </button>
+                  <div class="language-dropdown" id="languageDropdown">
+                      <button onclick="translateLanguage('en','English')">English</button>
+                      <button onclick="translateLanguage('te','Telugu')">Telugu</button>
+                      <button onclick="translateLanguage('ta','Tamil')">Tamil</button>
+                      <button onclick="translateLanguage('hi','Hindi')">Hindi</button>
+                  </div>
+              </div>
+          </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <!-- nav end -->
+<!-- Hero sec start -->
+<section class="home" id="home">
+  <div class="home-content">
+      <h1>Welcome to Sweet Delights Bakery </h1>
+      <p>Where every bite brings happiness.</p>
+      <button class="cta-button"> <a href="#products" class="exlorebtn">Explore Our Menu</a>
+      </button>
+  </div>
+</section>
+
+ <!--Hero sec end -->
+
+ <!-- about us start -->
+ <section class="about" id="about">
+  <div class="container">
+    <h1 class="about-title">About Us</h1>
+    <div class="about-grid">
+        <div class="main-card">
+            <div class="main-card-content">
+                <img src="https://images.pexels.com/photos/3218467/pexels-photo-3218467.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bakery Interior" class="main-card-image">
+                <div class="main-card-text">
+                    <h2>Our Bakery Story</h2>
+                    <p>
+                        Founded with a passion for creating delectable treats, our bakery has been serving 
+                        the community with handcrafted breads, pastries, and cakes. We believe in using 
+                        the finest ingredients and traditional baking techniques to bring joy to every bite.
+                    </p>
+                    <p>
+                      
+                      Our journey began with a simple dream: to create moments of happiness through 
+                      our carefully crafted baked goods. From our family to yours, we pour love 
+                      and dedication into every single creation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="small-cards-container">
+            <div class="small-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="small-card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 01-4.438-4.43l-.477-2.222a2 2 0 00-1.718-1.597L7.111 5.89a2 2 0 01-1.764-2.395l.46-2.328A2 2 0 017.763.84l15.549 3.72a2 2 0 011.491 2.383l-1.097 5.484a2 2 0 01-1.165 1.427z" />
+            </svg>
+                <h3>25+ Years Experience</h3>
+                <p>Crafting delicious memories</p>
+            </div>
+            <div class="small-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="small-card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+                <h3>50,000+ Customers</h3>
+                <p>Served with love and care</p>
+            </div>
+            <div class="small-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="small-card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+                <h3>$2M+ Annual Turnover</h3>
+                <p>Growing stronger every year</p>
+            </div>
+            <div class="small-card">
+              <svg xmlns="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=600" fill="none" viewBox="0 0 24 24" class="small-card-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+                <h3>10 Branches</h3>
+                <p>Spreading sweetness everywhere</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- about us end -->
+
+<!-- testimonials start-->
+<section class="testimonials" id="testimonials">
+  <h2 class="testimonials-title">What Our Customers Say</h2>
+  <div class="testimonial-container">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+          <img src="https://images.pexels.com/photos/4307692/pexels-photo-4307692.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 1" class="testimonial-img">
+          <div class="testimonial-content">
+              <h3>Sarah Johnson</h3>
+              <p>"The best bakery in town! Their croissants are fresh, and the cakes are just heavenly."</p>
+          </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+          <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 2" class="testimonial-img">
+          <div class="testimonial-content">
+              <h3>Michael Smith</h3>
+              <p>"Absolutely love their chocolate pastries! Soft, rich, and just the right sweetness."</p>
+          </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+          <img src="https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 3" class="testimonial-img">
+          <div class="testimonial-content">
+              <h3>Emily Davis</h3>
+              <p>"Fantastic bakery! Their sourdough bread is my favorite. Great service and ambiance."</p>
+          </div>
+      </div>
+
+      
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card">
+        <img src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer 3" class="testimonial-img">
+        <div class="testimonial-content">
+            <h3>Emily Davis</h3>
+            <p>"Fantastic bakery! Their sourdough bread is my favorite. Great service and ambiance."</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+ <!-- testmonials end -->
+
+<!-- product sec start -->
+<section class="products" id="products">
+  <h2 class="products-title">Best Seller Items</h2>
+  <div class="product-container">
+    
+    <!-- Product 1 -->
+    <div class="product-wrapper">
+      <div class="product-card" data-hover-img="https://images.pexels.com/photos/31020416/pexels-photo-31020416/free-photo-of-delicious-homemade-strawberry-lattice-pie.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <div class="image-container"  >
+          <img src="https://images.pexels.com/photos/2955816/pexels-photo-2955816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+               alt="Strawberry Lattice Pie" class="product-image">
+          <div class="image-overlay"></div>
+        </div>
+        <div class="product-info">
+          <h3>Strawberry Lattice Pie</h3>
+          <p>Freshly baked with sweet strawberries wrapped in a flaky crust.</p>
+        </div>
+       </div>  
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-wrapper">
+      <div class="product-card" data-hover-img="https://images.pexels.com/photos/16014993/pexels-photo-16014993/free-photo-of-chocolate-cakes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <div class="image-container">
+              <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Chocolate Cake" class="product-image">
+              <div class="image-overlay"></div>
+          </div>
+          <div class="product-info">
+              <h3>Chocolate Cake</h3>
+              <p>Rich, moist, and filled with layers of premium chocolate ganache.</p>
+          </div>
+      </div>
+  </div>
+  
+
+<!-- Product 3 -->
+<div class="product-wrapper">
+  <div class="product-card" data-hover-img="https://images.pexels.com/photos/10510747/pexels-photo-10510747.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+      <div class="image-container">
+          <img src="https://images.pexels.com/photos/19288295/pexels-photo-19288295/free-photo-of-chocolate-cake-with-nuts.jpeg?auto=compress&cs=tinysrgb&w=600" 
+               alt="Almond Croissant" class="product-image">
+          <div class="image-overlay"></div>
+      </div>
+      <div class="product-info">
+          <h3>Almond Croissant</h3>
+          <p>Flaky, buttery croissant with rich almond filling and chocolate drizzle.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Product 4 -->
+<div class="product-wrapper">
+  <div class="product-card" data-hover-img="https://images.pexels.com/photos/30632233/pexels-photo-30632233/free-photo-of-close-up-of-chocolate-almond-croissant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+      <div class="image-container">
+          <img src="https://images.pexels.com/photos/30919066/pexels-photo-30919066/free-photo-of-delicious-chocolate-and-pistachio-covered-croissants.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+               alt="Pistachio Croissant" class="product-image">
+          <div class="image-overlay"></div>
+      </div>
+      <div class="product-info">
+          <h3>Pistachio Croissant</h3>
+          <p>Golden croissant topped with rich chocolate and crunchy pistachios.</p>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Product 5 -->
+    <div class="product-wrapper">
+      <div class="product-card" data-hover-img="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=600"> 
+          <div class="image-container" >
+              <img src="https://images.pexels.com/photos/12081755/pexels-photo-12081755.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
+                   alt="Blueberry Muffins" class="product-image">
+              <div class="image-overlay"></div>
+          </div>
+          <div class="product-info">
+              <h3>Blueberry Muffins</h3>
+              <p>Soft and fluffy muffins bursting with fresh blueberries.</p>
+          </div>
+      </div>
+  </div>
+
+  </div>
+</section>
+ <!-- product sec end -->
+
+<!-- pricing section start -->
+<section class="pricing" id="pricing">
+  <h2 class="pricing-title">Our Pricing</h2>
+  <div class="pricing-container">
+
+      <!-- Large Image (First Row) -->
+      <div class="pricing-card large">
+          <img src="https://images.pexels.com/photos/2955816/pexels-photo-2955816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+               alt="Large Product">
+          <div class="price-overlay">₹499</div>
+      </div>
+
+      <!-- Three Medium Images (Second Row) -->
+      <div class="pricing-row">
+          <div class="pricing-card medium">
+              <img src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Medium Product 1">
+              <div class="price-overlay">₹299</div>
+          </div>
+          <div class="pricing-card medium">
+            <img src="https://images.pexels.com/photos/853005/pexels-photo-853005.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                 alt="Medium Product 3">
+            <div class="price-overlay">₹275</div>
+        </div>
+          <div class="pricing-card medium">
+              <img src="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Medium Product 2">
+              <div class="price-overlay">₹350</div>
+          </div>
+        
+      </div>
+
+      <!-- Large Image (Last Row) -->
+      <div class="pricing-card large">
+          <img src="https://images.pexels.com/photos/12081755/pexels-photo-12081755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+               alt="Large Product">
+          <div class="price-overlay">₹599</div>
+      </div>
+
+  </div>
+</section>
+ <!-- pricing section end -->
+
+ <!-- Gallery start -->
+ <section class="gallery" id="gallery">
+  <h2 class="gallery-title">Our Gallery</h2>
+  <div class="gallery-container">
+
+      <!-- Row 1 -->
+      <div class="gallery-item medium">
+          <img src="https://images.pexels.com/photos/9810301/pexels-photo-9810301.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-item wide">
+          <img src="https://images.pexels.com/photos/6375498/pexels-photo-6375498.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image 2">
+      </div>
+
+      <!-- Row 2 (Reversed) -->
+      <div class="gallery-item wide">
+          <img src="https://images.pexels.com/photos/887850/pexels-photo-887850.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image 3">
+      </div>
+      <div class="gallery-item medium">
+          <img src="https://images.pexels.com/photos/29437037/pexels-photo-29437037/free-photo-of-delicious-chocolate-cake-slice-with-coffee.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image 4">
+      </div>
+
+      <!-- Row 3 (Reversed Again) -->
+      <div class="gallery-item medium">
+          <img src="https://images.pexels.com/photos/4809143/pexels-photo-4809143.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-item wide">
+          <img src="https://images.pexels.com/photos/17822810/pexels-photo-17822810/free-photo-of-chocolate-cake-for-party.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Gallery Image 6">
+      </div>
+
+  </div>
+</section>
+<!-- gallery end -->
+
+
+<!-- payments section start -->
+<section class="payment-section" id="payments">
+  <h2 class="payment-title">Payments</h2>
+  
+  <div class="payment-container">
+      
+    <div class="payment-container">
+      <div class="payment-visual">
+          <div class="qr-code-wrapper">
+              <div class="qr-code">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="qrcodeimg">
+                   
+              </div>
+          </div>
+      </div>
+      <div class="payment-instructions">
+          <h2>Payment Guide</h2>
+          <ul class="instruction-list">
+             
+              <li>📱 Open your UPI payment app.</li>
+            <li>📸 Scan the QR code displayed.</li>
+            <li>💰 Enter the amount & confirm your payment.</li>
+            <li>✔ Receive an instant payment confirmation.</li>
+          </ul>
+              <!-- UPI Payment Icons -->
+          <!-- <div class="payment-icons">
+            <img
+                  src="https://cdn-icons-png.freepik.com/256/16183/16183667.png?ga=GA1.1.1998464910.1735807655&semt=ais_hybrid"
+                  alt="Visa"
+                  class="icon"
+                />
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/14082/14082959.png?ga=GA1.1.1998464910.1735807655&semt=ais_hybrid"
+                  alt="MasterCard"
+                  class="icon"
+                />
+                <img
+                  src="https://cdn-icons-png.freepik.com/256/2504/2504931.png?ga=GA1.1.1998464910.1735807655&semt=ais_hybrid"
+                  alt="PayPal"
+                  class="icon"
+                />
+                <img
+                  src="https://cdn.iconscout.com/icon/free/png-256/free-upi-logo-icon-download-in-svg-png-gif-file-formats--unified-payments-interface-payment-money-transfer-logos-icons-1747946.png"
+                  alt="UPI"
+                  class="icon"
+                />
+          </div> -->
+      </div>
+
+  </div>
+</section>
+<!-- payments section end -->
+
+ <!-- contact us section -->
+ <section class="contact-section" id="contact">
+    <h2 class="contact-title"> Contact Us</h2>
+    <div class="contact-wrapper">
+        <div class="contact-visual">
+            <h2>Visit Us & Get in Touch</h2>
+            <div class="contact-visual-details">
+                <div class="contact-details">
+                  <div class="contact-detail">
+                    <strong>Name</strong>
+                    <p> Bakery Den Bakery</p>
+                   </div>
+                <div class="contact-detail">
+                  <strong>Email</strong>
+                  <p>bakers@gmail.com</p>
+              </div>
+              <div class="contact-detail">
+                <strong>Phone</strong>
+                <p> +91 123 234 5678</p>
+            </div>
+                    <div class="contact-detail">
+                        <strong>Location</strong>
+                        <p>123 Bakery Lane</p>
+                        <p>Sweetville, BK 12345</p>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Working Days</strong>
+                        <p>Monday-Friday></p>                        
+                        <p>Sun: Closed</p>
+                    </div>
+                    <div class="contact-detail">
+                        <strong>Working Timings</strong>
+                        <p> 9 AM - 10 PM</p>
+                      
+                    </div>
+                </div>
+                <button class="contact-btn"><a class="connect-btn" id="connect-us" onclick="contactOpenPopup()"> Connect With Us</a></button>
+            </div>
+        </div>
+    </div>
+
+
+       
+
+    </div>
+</section>
+ <!-- conatctus end  -->
+  <!-- PopUp buttons start -->
+
+  <div id="contactpopup">
+    <div class="popup-content">
+      <button class="close-btn notranslate" onclick="contactClosePopup()">X</button>
+      <h2>Contact Us</h2>
+      <form
+        id="contactForm"
+        action="https://formsubmit.co/aswinichowdary855@gmail.com"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="contactHandleSubmit(event)"
+      >
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+        </div>
+
+        <!-- Hidden field to store the dynamic redirection URL -->
+
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+      <div class="thank-you-message" id="contactThankYouMessage">
+        Thank you for contacting us! We'll get back to you soon.
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form Popup Modal -->
+
+  <div id="popup">
+    <div class="popup-content">
+      <!-- Close button (X) to close the popup -->
+      <button class="close-btn notranslate" onclick="closePopup()">X</button>
+
+      <h2>Schedule Your Appointment</h2>
+
+      <!-- Button to open the calendar -->
+      <button id="datePickerButton">Select Appointment Date</button>
+
+      <!-- Hidden input field to store the selected date -->
+      <input 
+      title="placeholder"
+        type="text"
+        id="appointmentDate"
+        name="appointment_date"
+        class="appointment-date"
+      />
+
+      <!-- Simple form to send the email using Formsubmit -->
+      <form
+        id="emailForm"
+        action=""
+        method="POST"
+        onsubmit="handleSubmit(event)"
+      >
+        <!-- Email input -->
+        <input
+          type="email"
+          name="email"
+          id="emailField"
+          placeholder="Your Email Address"
+          required
+        />
+
+        <!-- Hidden field for appointment date -->
+        <input
+          type="hidden"
+          name="appointment_date"
+          id="appointmentDateField"
+        />
+
+        <!-- Message textarea -->
+        <textarea
+          id="emailBody"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter your email content..."
+          required
+        ></textarea>
+
+        <!-- Hidden redirect URL (this will be passed as query parameter) -->
+
+        <div class="form-group">
+          <button type="submit">Send Mail</button>
+        </div>
+      </form>
+
+      <!-- Thank you message -->
+      <div class="thank-you-message" id="thankYouMessage">
+        Thank you for scheduling your appointment! We’ll be in touch soon.
+      </div>
+    </div>
+  </div>
+  <!-- PopUp buttons end --> 
+</main>
+ <!-- footer start -->
+ <footer class="footer">
+    <div class="footer-overlay">
+        <p>© <span id="currentYear"></span> temp2 All Rights Reserved.</p>
+        <p class="product-by-visys">Powered By RekhaKaparapu</p>
+        <div class="social-icons">
+            <a  id="fotter-icon1" href="#" target="_blank" class="text-white mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a id="fotter-icon4" href="#" target="_blank" class="text-white mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+            <a id="fotter-icon2" href="#" target="_blank" class="text-white mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a id="fotter-icon3" href="#" target="_blank" class="text-white mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
+ <!-- footer end -->
+      <!--whatsapp   -->
+      <a rel="noopener"
+      href="https://wa.me/9381254299?text=Hello%2C%20I%20have%20an%20inquiry%20about%20your%20products%21"
+      target="_blank"
+      class="whatsapp-btn"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+    <!-- whatsapp end -->
+  <div id="google_translate_element"></div>
+  <script src="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=600"></script>
+
+
+
+<script src="script.js"></script>
+<script src="https://images.pexels.com/photos/12081755/pexels-photo-12081755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></script>
+
+<script>
+  // nav bar scroll
+  window.addEventListener("scroll", function() {
+    let navbar = document.querySelector(".navbar");
+    let aboutSection = document.querySelector("#about"); // Target About section
+    let aboutOffset = aboutSection.offsetTop; // Get About section position
+    
+    if (window.scrollY >= aboutOffset - 50) { // Change color when About section is reached
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+// products dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    let dropdown = document.querySelector(".dropbtn");
+    let dropdownContent = document.querySelector(".dropdown-content");
+
+    dropdown.addEventListener("click", function (event) {
+        event.preventDefault();
+        dropdownContent.classList.toggle("show");
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target) && !dropdownContent.contains(event.target)) {
+            dropdownContent.classList.remove("show");
+        }
+    });
+});
+
+// product section
+document.addEventListener("DOMContentLoaded", function () {
+    let productCards = document.querySelectorAll(".product-card");
+    let delay = 0;
+
+    productCards.forEach((card, index) => {
+        card.style.animationDelay = `${delay}s`;
+
+        if ((index + 1) % 5 === 0) {
+            delay += 0.5; // Delay for next row
+        } else {
+            delay += 0.2; // Stagger effect for each item
+        }
+
+        // Set hover image dynamically
+        let hoverImg = card.getAttribute("data-hover-img");
+        let imageContainer = card.querySelector(".image-container");
+
+        if (hoverImg) {
+            let hoverImage = document.createElement("div");
+            hoverImage.style.backgroundImage = `url(${hoverImg})`;
+            hoverImage.style.position = "absolute";
+            hoverImage.style.top = "0";
+            hoverImage.style.left = "0";
+            hoverImage.style.width = "100%";
+            hoverImage.style.height = "100%";
+            hoverImage.style.backgroundSize = "cover";
+            hoverImage.style.backgroundPosition = "center";
+            hoverImage.style.opacity = "0";
+            hoverImage.style.transition = "opacity 0.5s ease-in-out";
+            hoverImage.classList.add("hover-image");
+            imageContainer.appendChild(hoverImage);
+
+            card.addEventListener("mouseenter", () => {
+                hoverImage.style.opacity = "1";
+            });
+
+            card.addEventListener("mouseleave", () => {
+                hoverImage.style.opacity = "0";
+            });
+        }
+    });
+});
+// gallery section
+document.addEventListener("DOMContentLoaded", function () {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    function checkScroll() {
+        let triggerBottom = window.innerHeight * 0.85;
+
+        galleryItems.forEach(item => {
+            let itemTop = item.getBoundingClientRect().top;
+
+            if (itemTop < triggerBottom) {
+                item.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Check on load in case already in view
+});
+
+// payments section
+document.addEventListener("DOMContentLoaded", function () {
+    const paymentSection = document.querySelector(".payment-section");
+
+    function checkScroll() {
+        let triggerBottom = window.innerHeight * 0.85;
+        let sectionTop = paymentSection.getBoundingClientRect().top;
+
+        if (sectionTop < triggerBottom) {
+            paymentSection.classList.add("visible");
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+    checkScroll(); // Check on load in case already in view
+});
+
+</script>
+</body>
+</html>
